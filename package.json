@@ -1,0 +1,35 @@
+{
+  "name": "frequency-bars",
+  "description": "nanocomponent rendering realtime audio frequencies as a bar chart",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/frequency-bars/issues"
+  },
+  "dependencies": {
+    "nanocomponent": "^6.5.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/frequency-bars",
+  "keywords": [
+    "audio",
+    "bar-chart",
+    "choo",
+    "frequencies",
+    "frequency",
+    "nanocomponent",
+    "visualization",
+    "visualizer"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/frequency-bars.git"
+  },
+  "scripts": {
+    "test": "standard"
+  }
+}
