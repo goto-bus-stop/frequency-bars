@@ -10,6 +10,8 @@
     "nanocomponent": "^6.5.2"
   },
   "devDependencies": {
+    "bankai": "^9.15.0",
+    "choo": "^6.13.0",
     "standard": "^12.0.0"
   },
   "homepage": "https://github.com/goto-bus-stop/frequency-bars",
@@ -30,6 +32,7 @@
     "url": "https://github.com/goto-bus-stop/frequency-bars.git"
   },
   "scripts": {
+    "start": "bankai start example/app.js",
     "test": "standard"
   }
 }

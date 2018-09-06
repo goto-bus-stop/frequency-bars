@@ -34,7 +34,7 @@ module.exports = class FrequencyBars extends Nanocomponent {
     }
 
     if (audio !== this.audio) {
-      this.stop()
+      if (this.audio) this.stop()
       this.audio = audio
       this.start()
     }
