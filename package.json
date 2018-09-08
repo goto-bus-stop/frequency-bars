@@ -1,7 +1,7 @@
 {
   "name": "frequency-bars",
   "description": "nanocomponent rendering realtime audio frequencies as a bar chart",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": {
     "url": "https://github.com/goto-bus-stop/frequency-bars/issues"
