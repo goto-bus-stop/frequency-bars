@@ -1,3 +1,4 @@
+/* eslint-env browser */
 const choo = require('choo')
 const html = require('choo/html')
 const FrequencyBars = require('..')
