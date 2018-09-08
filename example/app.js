@@ -14,6 +14,7 @@ app.use((state, emitter) => {
   emitter.on('play', () => {
     state.audio.play()
     state.playing = true
+    emitter.emit('render')
   })
   emitter.on('file', (file) => {
     if (state.audio && /^blob:/.test(state.audio.src)) {
@@ -31,7 +32,7 @@ app.use((state, emitter) => {
 app.route('/', (state, emit) => {
   return html`
     <body>
-      ${!state.playing && html`
+      ${state.playing ? null : html`
         <p>
           Browsers tend to block autoplay. Select a file below or click <button onclick=${onplay}>here</button> to start playing a demo track.
         </p>

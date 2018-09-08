@@ -43,10 +43,13 @@ module.exports = class FrequencyBars extends Nanocomponent {
   }
 
   start () {
-    const { audioContext } = this
+    const { audioContext, canvas } = this
+    const { width } = canvas
 
     const analyser = audioContext.createAnalyser()
-    analyser.fftSize = 256
+    let fftSize = 32
+    while (fftSize * 2 < width) fftSize *= 2
+    analyser.fftSize = fftSize
     const source = audioContext.createMediaElementSource(this.audio)
     source.connect(analyser)
     source.connect(audioContext.destination)
