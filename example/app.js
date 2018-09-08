@@ -30,7 +30,7 @@ app.use((state, emitter) => {
   })
 })
 
-app.route('/', (state, emit) => {
+app.route('*', (state, emit) => {
   return html`
     <body>
       ${state.playing ? null : html`
