@@ -1,6 +1,17 @@
 language: node_js
 sudo: false
 node_js:
-  - 10
+  - stable
   - 8
   - 6
+
+before_deploy:
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: dist
+  on:
+    branch: default
+    node: stable

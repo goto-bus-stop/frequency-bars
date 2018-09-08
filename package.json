@@ -33,6 +33,7 @@
   },
   "scripts": {
     "start": "bankai start example/app.js",
+    "build": "bankai build example/app.js dist",
     "test": "standard"
   }
 }
