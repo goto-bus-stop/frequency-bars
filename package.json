@@ -12,7 +12,7 @@
   "devDependencies": {
     "bankai": "^9.15.0",
     "choo": "^7.1.0",
-    "standard": "^14.3.1"
+    "standard": "^17.0.0"
   },
   "homepage": "https://github.com/goto-bus-stop/frequency-bars",
   "keywords": [
